@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
+import 'widgets/input_card_widget.dart';
 
 class ScreenHome extends StatelessWidget {
   const ScreenHome({super.key});
@@ -9,8 +9,14 @@ class ScreenHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
-        centerTitle: true,
+        title: const Text(
+          'Home',
+        ),
+      ),
+      body: Column(
+        children: [
+          InputCardWidget(),
+        ],
       ),
     );
   }

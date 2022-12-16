@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mobigic_test/views/core/colors/colors.dart';
 
 class GoogleFont {
-  static final TextStyle splashStyle = GoogleFonts.manrope(
+  static final TextStyle splashStyle = GoogleFonts.poppins(
     fontSize: 48,
     fontWeight: FontWeight.w600,
     letterSpacing: 2,
-    color: Colors.black,
+    color: kBlack,
+    // decoration: TextDecoration.underline,
+  );
+  static final TextStyle appBarStyle = GoogleFonts.poppins(
+    fontSize: 24, fontWeight: FontWeight.w600, color: kWhite,
+    // decoration: TextDecoration.underline,
+  );
+  static final TextStyle textFieldStyle = GoogleFonts.poppins(
+    fontSize: 16, fontWeight: FontWeight.w500, color: kBlack,
     // decoration: TextDecoration.underline,
   );
 }

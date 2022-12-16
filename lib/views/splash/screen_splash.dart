@@ -28,7 +28,7 @@ class ScreenSplash extends StatelessWidget {
     );
   }
 
-  startNavigate() async {
+  Future<void> startNavigate() async {
     await Future.delayed(const Duration(seconds: 6));
     Get.off(
       () => const ScreenHome(),

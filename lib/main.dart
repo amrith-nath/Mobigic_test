@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mobigic_test/views/core/colors/colors.dart';
+import 'package:mobigic_test/views/core/theme/theme.dart';
 import 'package:mobigic_test/views/splash/screen_splash.dart';
 
 void main() {
@@ -13,13 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       title: 'Mobigic demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: kWhite,
-        appBarTheme: const AppBarTheme(backgroundColor: kBlack),
-      ),
+      theme: MyTheme.kThemeData,
       home: const ScreenSplash(),
     );
   }
