@@ -88,7 +88,7 @@ class InputCardWidget extends StatelessWidget {
                   if (_formKey.currentState!.validate()) {
                     Get.to(
                       () => Screengrid(
-                        alphabets: alphabetController.text.trim(),
+                        alphabets: alphabetController.text.trim().toUpperCase(),
                         rows: int.parse(rowController.text.trim()),
                         columns: int.parse(columnController.text.trim()),
                       ),
