@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobigic_test/views/core/constants/constants.dart';
+import 'package:mobigic_test/views/core/fonts/fonts.dart';
 
 import 'widgets/input_card_widget.dart';
 
@@ -15,6 +17,16 @@ class ScreenHome extends StatelessWidget {
       ),
       body: Column(
         children: [
+          kHeight,
+          SizedBox(
+            width: 300,
+            child: Text(
+              'Enter the Number of Rows, Columns and The Alphabets',
+              style: GoogleFont.homeHeadStyle,
+              textAlign: TextAlign.center,
+            ),
+          ),
+          kHeight,
           InputCardWidget(),
         ],
       ),

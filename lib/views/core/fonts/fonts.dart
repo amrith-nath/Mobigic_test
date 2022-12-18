@@ -18,4 +18,9 @@ class GoogleFont {
     fontSize: 16, fontWeight: FontWeight.w500, color: kBlack,
     // decoration: TextDecoration.underline,
   );
+  static final TextStyle homeHeadStyle = GoogleFonts.poppins(
+    fontSize: 20, fontWeight: FontWeight.w500, color: kBlack,
+
+    // decoration: TextDecoration.underline,
+  );
 }

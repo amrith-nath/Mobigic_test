@@ -87,7 +87,11 @@ class InputCardWidget extends StatelessWidget {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     Get.to(
-                      () => const Screengrid(),
+                      () => Screengrid(
+                        alphabets: alphabetController.text.trim(),
+                        rows: int.parse(rowController.text.trim()),
+                        columns: int.parse(columnController.text.trim()),
+                      ),
                       transition: Transition.downToUp,
                       duration: const Duration(milliseconds: 400),
                     );
